@@ -61,7 +61,7 @@ async def startup_event():
     
     try:
         # Initialize RAG system
-        rag_system = ProductionRAG()
+        rag_system = ProductionRAG(embedding_model="paraphrase-MiniLM-L3-v2")
         
         # Check if there's a default document to load
         default_doc = "data/meta.pdf"

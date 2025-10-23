@@ -18,7 +18,7 @@ class ProductionRAG:
     
     def __init__(
         self,
-        embedding_model: str = "all-MiniLM-L6-v2",
+        embedding_model: str = "paraphrase-MiniLM-L3-v2",
         llm_model: str = "llama-3.3-70b-versatile",
         groq_api_key: Optional[str] = None,
         cache_dir: str = "cache"
